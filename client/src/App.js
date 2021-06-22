@@ -1,7 +1,14 @@
 import "./App.css";
+import { Fragment } from "react";
+// Components
+import Signature from "./components/Signature";
 
 function App() {
-  return <div>OmniHouse</div>;
+  return (
+    <Fragment>
+      <Signature />
+    </Fragment>
+  );
 }
 
 export default App;

@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.signature-form {
+    background-color: #1c191d;
+    color: white;
+    border-radius: 3px;
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.signature-button {
+    background-color: #93227f;
+    color: white;
+    border-radius: 5px;
+    border-width: 0;
+    padding: 10px 50px 10px 50px;
+    margin-bottom: 10px;
+    width: 100%
+}
+
+.upload-button {
+    text-align: center;
+}
+
+.upload-button:hover {
+    cursor: pointer;
+}
+
+.preview img {
+
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.form-input {
+    background-color: #1c191d;
+    color: white;
+    width: 100%;
+    border-radius: 5px;
+    border-color: #93227f;
+    border-style: solid;
+    margin-bottom: 15px;
+}
+
+.submit-button {
+    background-color: #d41553;
+}
