@@ -69,7 +69,8 @@ const Signature = () => {
     const pdf = new jsPDF("p", "pt");
     pdf.text(20, 20, "OmniHouse Contract Builder Signature:");
     pdf.setFont("helvetica");
-    pdf.addImage(uploaded, "JPEG", 15, 40, 180, 160);
+    type !== "" && pdf.text(type, 50, 50);
+    uploaded !== "" && pdf.addImage(uploaded, "JPEG", 50, 100, 180, 160);
     pdf.save("signature-file.pdf");
 
     setFormData({

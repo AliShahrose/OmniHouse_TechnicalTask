@@ -1,12 +1,12 @@
 import "./App.css";
 import { Fragment } from "react";
 // Components
-import Signature from "./components/Signature";
+import Layout from "./components/Layout";
 
 function App() {
   return (
     <Fragment>
-      <Signature />
+      <Layout />
     </Fragment>
   );
 }

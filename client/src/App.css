@@ -2,6 +2,35 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow: hidden;
+}
+
+.strip {
+    background-color: #211f21;
+    color: white;
+}
+
+.strip div i {
+    cursor: pointer;
+}
+
+.canvas {
+    background-color: #2d232b;
+    height: 100vh;
+}
+
+.navbar-theme {
+    color: white;
+    background-color: #161516;
+    height: 100vh;
+}
+
+.navbar-theme div {
+    cursor: pointer;
+}
+
+.navbar-end {
+    height: inherit;
 }
 
 .signature-form {
@@ -36,6 +65,7 @@
 
     width: 100%;
     height: auto;
+    max-height: 50vh;
     border-radius: 10px;
     object-fit: cover;
 }
@@ -52,4 +82,66 @@
 
 .submit-button {
     background-color: #d41553;
+}
+
+.sidebar-button {
+    background: none;
+    color: white;
+    border-radius: 5px;
+    border-width: 0;
+    padding: 1px 5px 5px 1px;
+    margin-bottom: 10px;
+    width: 100%;
+    text-align: start;
+}
+
+.sidebar-button:hover {
+    background-color: #93227f;
+}
+
+.sidebar-button-active {
+    background-color: #93227f;
+}
+
+.scroll {
+    overflow-y: scroll;
+    width: 100%;
+    height: 60vh;
+}
+
+.scroll h4 {
+    color: #eb00ff;
+}
+
+.scroll b {
+    -webkit-text-stroke: 0.5px #dd6bcb;
+    color: #f9f3fa;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #2e2d2d;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #dcc0c0;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 768px) {
+    * {
+        overflow: visible;
+    }
+
+    .canvas {
+        height: 100%;
+    }
+
+    .navbar-theme {
+        height: 100%;
+    }
 }
